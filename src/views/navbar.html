@@ -1,0 +1,20 @@
+<div id="navbar" class="navbar">
+    <a href="index.html" class="navbar__homebutton"><i><img width="1em" height="1em" src="./assets/svg/home.svg" alt=""></i></a>
+    <a href="salvastoria.html">Converti storia</a>
+    <a href="salvaelenco.html">Salva elenco</a>
+    <a href="about.html">About</a>
+    <div class="navbar__dropdown">
+        <a class="navbar__icon" onclick="dropmenu()">
+            <i class="hamburgermenu"><img id="navbar__options" src="./assets/svg/menu.svg" alt=""></i>
+        </a>
+    </div>
+    <form id="cerca" action="index.html">
+        <label for="cerca">Cerca</label>
+    <input name="cerca" class="navbar__search" type="text" id="ricerca" placeholder="Cerca.." onkeyup="ricercalocale()" onsubmit="ricerca()" title="Inserisci un titolo" autocomplete="off">
+    </form>
+</div>
+<div id="navbar__dropcontent" class="navbar__dropcontent">
+    <a href="salvastoria.html">Converti storia</a>
+    <a href="salvaelenco.html">Salva elenco</a>
+    <a href="about.html">About</a>
+</div>

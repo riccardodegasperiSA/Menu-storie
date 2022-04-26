@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./assets/vendors/vendors-css/normalize.min.css">
+	<link rel="stylesheet" href="./assets/styles/main.min.css">
+</head>
+<body onload="caricalink()"></body>
+    <div id="navbar-placeholder"></div>
+    
+    <div class="linkarea" id="linkarea"></div>
+    
+    <script src="./assets/scripts/main.min.js"></script>
+    <script src="./assets/vendors/vendors-js/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#navbar-placeholder").load("navbar.html");
+        });
+    </script>
+</body>
+</html>

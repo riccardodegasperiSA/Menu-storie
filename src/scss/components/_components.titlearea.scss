@@ -1,0 +1,33 @@
+.titlearea {
+    
+    &--Thriller{
+        margin-top: 4em;
+        text-align: center;
+        font-family: "Metal Mania";
+    }
+
+    &--Fantascienza{
+        margin-top: 4em;
+        text-align: center;
+        font-family: "Orbitron";
+    }
+
+    &--Fantasy{
+        margin-top: 4em;
+        text-align: center;
+        font-family: "Beu Rivage";
+    }
+
+    &--Avventura{
+        margin-top: 4em;
+        text-align: center;
+        font-family: "Tapestry";
+    }
+
+    &--Altro{
+        margin-top: 4em;
+        text-align: center;
+        font-family: "Roboto";
+    }
+
+}

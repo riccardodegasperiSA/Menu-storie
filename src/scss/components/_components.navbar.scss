@@ -1,0 +1,128 @@
+.navbar{
+
+    z-index: 100;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: $navbarbkg-color;
+
+    label{
+        display: none;
+    }
+
+    &__dropcontent {
+        display: none;
+    }
+
+    &__icon {
+        @include respond-above(md){
+              display: none;
+          }
+      }
+
+    img{
+        width: 1em;
+        height: 1em;
+        fill: $white;
+    }
+
+    a{
+        float: left;
+        font-size: 1.3em;
+        color: $white;
+        text-align: center;
+        padding: .5em;
+        text-decoration: none;
+
+        &:not(:first-child, :last-child){
+            display: none;
+            @include respond-above(md){
+                display: inline-block;
+            }
+        }
+
+        &:hover {
+            background-color: darken($navbarbkg-color, 10);
+        }
+    }
+
+    &__search {
+        float: right;
+        font-size: inherit;
+        padding: .5em;
+        border: none;
+        border-radius: 1em;
+        margin-top: .3em;
+        margin-right: 1em;
+
+    }
+
+    
+
+    @include respond-below(md){
+
+        &__homebutton {
+            span {
+                font-size: 0;
+            }
+        }
+
+        &__search {
+            float: right;
+            font-size: inherit;
+            padding: .5em;
+            border: none;
+            margin-top: .3em;
+            margin-right: 1em;
+        }
+
+}
+
+    // menu mobile aperto
+    &__dropcontent--show {
+
+        z-index: 100;
+
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+
+        border-top-style: solid;
+        border-top-width: .1em;
+        
+        position: fixed;
+        top: 2.8em;
+        overflow: hidden;
+        background-color: $navbarbkg-color;
+
+        label{
+            display: none;
+        }
+
+        // a.icon {
+        //     position: relative;
+        //   }
+        a {
+            //float: none;
+            border-width: .001em;
+            &:not(:last-child){
+            border-bottom-style: solid;
+            }
+            font-size: 1.3em;
+            color: $white;
+            text-align: center;
+            padding:.5em;
+            text-decoration: none;
+            display: block;
+            &:hover{
+                background-color: darken($navbarbkg-color, 10);
+            }
+        }
+    }
+
+    &__reset-icon--hide {
+        display: none;
+    }
+
+}

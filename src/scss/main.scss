@@ -1,0 +1,18 @@
+/*
+
+    @doc scss https://sass-lang.com/guide
+
+*/
+
+@import "settings/_settings.scss";
+@import "tools/_tools.scss";
+
+// da generic in poi verrà generato il nostro css
+
+@import "generic/_generic.scss";
+@import "elements/_elements.scss";
+// @import "objects/_objects.scss";
+@import "components/_components.scss";
+// @import "vendors/_vendors.scss";
+@import "utilities/_utilities.scss"
+

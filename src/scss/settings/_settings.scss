@@ -1,0 +1,27 @@
+// color variables
+
+    $bkg-color:  #ECECEC;
+    
+    $white: #fff;
+
+    $reset-color : #809bce;
+    
+    $thriller-color: #FFEE5B;
+    $fantasy-color: #A0E368;
+    $fantascienza-color: #7252E7;
+    $avventura-color: #DF64EE;
+    $altro-color: #53C6F2;
+
+    // $navbarbkg-color: #5463FF;
+    // $navbarbkg-color: #c7053d;
+    $navbarbkg-color: #809bce;
+
+// END color variables
+
+// Breakpoints 
+$basePx: 16px;
+$breakpoints: (
+	md: $basePx*50,
+	lg: $basePx*80,
+);
+// END Breakpoints 

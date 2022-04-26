@@ -1,0 +1,179 @@
+.card{
+    
+    // list-style: none;
+
+    // definizione della card
+    div {
+
+    list-style: none;
+
+    text-align: center;
+
+    position: relative;
+    // background-color: $bkg-color;
+    border-radius: 1em;
+    padding: 1em;
+    color: black;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+    }
+
+    min-width: 18em;
+    max-width: 18em;
+
+    max-height: 18em;
+    // min-height: 12em;
+
+    &::after {
+        content: '';
+        position: relative;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: calc(100% - 3em);
+        height: 1.25em;
+        margin: auto;
+        opacity: .3;
+        display: block;
+        background-color: $bkg-color;
+        border-bottom-right-radius: 2em;
+        border-bottom-left-radius: 2em;
+        transition: all .3s ease-in-out;
+    }
+    
+    a {
+
+        &:link, &:visited, &:hover, &:active{
+            text-decoration: none;
+            color: black;
+        }
+
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: '';
+        }
+    }
+    // end card
+
+    // definizione dello stile per i diversi generi
+    &__Thriller {
+
+        background-color: $thriller-color;
+        font-family: "Metal Mania", serif;
+
+        // span {
+
+        //     // color: white;
+
+        // }
+
+        a {
+
+            &:link, &:visited, &:hover, &:active{
+                text-decoration: none;
+                // color: white;
+            }
+
+        }
+
+    }
+
+    &__Fantascienza {
+
+        background-color: $fantascienza-color;
+        font-family: "Orbitron", sans-serif;
+
+        // span {
+
+        //     // color: white;
+
+        // }
+
+        a {
+
+            z-index: 100;
+            &:link, &:visited, &:hover, &:active{
+                text-decoration: none;
+                // color: white;
+            }
+
+        }
+
+    }
+
+    &__Fantasy {
+
+        background-color: $fantasy-color;
+        font-family: "Beu Rivage";
+
+        // span {
+
+        //     // color: white;
+
+        // }
+
+        a {
+
+            z-index: 100;
+            &:link, &:visited, &:hover, &:active{
+                text-decoration: none;
+                // color: white;
+            }
+
+        }
+
+    }
+
+    &__Avventura {
+
+        background-color: $avventura-color;
+        font-family: "Tapestry";
+
+        // span {
+
+        //     // color: white;
+
+        // }
+
+        a {
+
+            z-index: 100;
+            &:link, &:visited, &:hover, &:active{
+                text-decoration: none;
+                // color: white;
+            }
+
+        }
+
+    }
+
+    &__Altro {
+
+        background-color: $altro-color;
+        font-family: "Roboto";
+
+        // span {
+
+        //     // color: white;
+
+        // }
+
+        a {
+
+            z-index: 100;
+            &:link, &:visited, &:hover, &:active{
+                text-decoration: none;
+                // color: white;
+            }
+
+        }
+
+    }
+    //end generi
+    
+}

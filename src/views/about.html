@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./assets/vendors/vendors-css/normalize.min.css">
+	<link rel="stylesheet" href="./assets/styles/main.min.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <div class="testo">
+        <br/>
+        <p>
+            Questa applicazione è progettata per raccogliere storie scritte da me e permetterne la lettura.<br/>
+            Ha una struttura semplice perché come utente tipo ho pensato a mio cugino di 8 anni, che abitualmente utilizza un tablet (1080x720).<br/>
+        </p>
+        <p>
+            Le pagine per convertire le storie in formato json (converti storie e salva elenco) sono visibili per completezza e non sarebbero visibili ad un utente reale.<br/>
+            Inoltre, a causa della mancanza di un back-end, è necessario gestire manualmente il salvataggio delle storie; se esso fosse presente, non sarebbe necessario inserire manualmente i file nelle cartelle e la pagina salva elenco sarebbe superflua.
+        </p>
+        <p>
+            Le icone svg sono state prese da <a href="https://www.svgrepo.com/">svgrepo.com</a>
+        </p>
+        <p>
+            La barra di ricerca consente di fare ricerche in tutte le pagine sia per titolo che per genere.<br/>
+            Nella pagina di indice non è necessario eseguire il submit.
+        </p>
+        <p>
+            Nell'indice le storie vengono visualizzate dall più recente alla meno recente.
+        </p>
+        <p>
+            Nel caricamento del testo delle storie per la lettura, viene usata la proprietà innerHTML per consentire maggiore flessibilità nella formattazione delle storie.<br/>
+            Non prevedo usufruire questa possibilità durante l'utilizzo reale (infatti le storie di esempio inserite non usano questa possibilità), ma non ho deciso di lasciare la possibilità per il futuro.
+        </p>
+    </div>
+    <script src="./assets/scripts/main.min.js"></script>
+    <script src="./assets/vendors/vendors-js/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#navbar-placeholder").load("navbar.html");
+        });
+    </script>
+</body>
+</html>

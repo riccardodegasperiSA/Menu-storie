@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converti storia</title>
+    <link rel="stylesheet" href="./assets/vendors/vendors-css/normalize.min.css">
+	<link rel="stylesheet" href="./assets/styles/main.min.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <div class="testo">
+    <h1>Converti una storia in json</h1>
+    <div>Verrà scaricato un file json da aggiungere nella cartella specifica</div>
+    <br/>
+    <form action="salvaelenco.html" method="get" onsubmit="convertiStoria()" autocomplete="off">
+        <div>
+            <label for="titolo">Titolo</label>
+            <input type="text" name="titolo" id="titolo" required>
+        </div>
+        <br/>
+        <div>
+            <label for="genere">Genere</label>
+            <select name="genere" id="genere" required>
+                <option value="Fantascienza">Fantascienza</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Avventura">Avventura</option>
+                <option value="Altro">Altro</option>
+                </select>
+        </div>
+        <br/>
+        <div>
+            <label for="storia">Testo (html compatibile)</label><br/>
+        <textarea rows="15" cols="100" name="storia" id="testo" required></textarea>
+        </div>
+        <br/>
+        <div>
+            <input type="submit" value="converti">
+        </div>
+    </form>
+</div>
+    <script src="./assets/scripts/main.min.js"></script>
+    <script src="./assets/vendors/vendors-js/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#navbar-placeholder").load("navbar.html");
+        });
+    </script>
+</body>
+</html>
